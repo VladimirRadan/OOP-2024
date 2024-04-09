@@ -1,25 +1,29 @@
+package student;
+
 public class Student {
 
     //polja
     String ime;
     String prezime;
-    int godine;
+    static int godine;
+    String email;
+
 
     //konstruktori - mehanizam za kreiranje objekata
 
     public Student() {
-        System.out.println("Prazan konstruktor!");
+        //System.out.println("Prazan konstruktor!");
     }
 
     public Student(String i, String p, int g) {
-        System.out.println("Params konstruktor!");
+        //System.out.println("Params konstruktor!");
         ime = i;
         prezime = p;
         godine = g;
     }
 
     public Student(String ime, String prezime) {
-        System.out.println("Params konstruktor 2!");
+        //System.out.println("Params konstruktor 2!");
         this.ime = ime;
         this.prezime = prezime;
     }
@@ -36,7 +40,7 @@ public class Student {
 
 
     //metode - ono sto objekat radi
-    public void ispis(){
+    public static void ispis(){
         System.out.println("Ispis");
     }
 
@@ -44,14 +48,12 @@ public class Student {
         return new Student();
     }
 
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "student.Student{" +
+                "ime='" + ime + '\'' +
+                ", prezime='" + prezime + '\'' +
+                ", godine=" + godine +
+                '}';
+    }
 }

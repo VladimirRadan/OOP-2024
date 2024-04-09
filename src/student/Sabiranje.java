@@ -1,3 +1,5 @@
+package student;
+
 public class Sabiranje {
 
     int x;
