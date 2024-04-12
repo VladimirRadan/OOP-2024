@@ -15,6 +15,14 @@ public class Sabiranje {
         return sum;
     }
 
+    public int saberiBrojeve(int...arg) {
+        int sum = 0;
+        for (int i = 0; i < arg.length; i++) {
+            sum += arg[i];
+        }
+        return sum;
+    }
+
 
 
 
